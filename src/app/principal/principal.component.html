@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-12 py-4">
+            <h1 class="display-5">Listado de Restaurantes</h1>
+        </div>
+        <div class="col-3 mt-2" *ngFor="let r of restaurantes">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.app.goo.gl/wnFSgVTKRJ2bUm1e9" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{r.nombre}}</h5>
+                    <p class="card-text">Dirección: {{ r.direccion }}</p>
+                    <p class="card-text">Telefono: {{ r.telefono }}</p>
+                    <a href="#" class="btn btn-success" routerLink='/list-opiniones'>Opiniones</a>
+                    <a href="#" class="btn btn-primary">Editar</a>
+                    <a href="#" class="btn btn-danger">Eliminar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>        
